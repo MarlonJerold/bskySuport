@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <title>Criar Post</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <div class="center-card">
+            <div class="card">
+                <!-- Editor de texto -->
+                <p:textEditor widgetVar="editor1" value="#{threadBean.editorText}" height="300px" secure="false" />
+                <!-- Botão para enviar o post -->
+                <div class="right-botton">
+                    <p:commandButton value="Publicar" styleClass="rounded-button" action="#{threadBean.handleSubmit}" update="@form" />
+                </div>
+            </div>
+        </div>
+    </h:form>
+</h:body>
+</html>
