@@ -46,7 +46,7 @@ public class ThreadBean implements Serializable {
     }
 
     public void addThread() {
-        threads.add("");
+        threads.add("te");
     }
 
     public void removeThread(int index) {
